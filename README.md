@@ -5,12 +5,12 @@
 Clone a copy of our empty project setup:
 
 ```
-git clone git@github.com:changer/backbone-boilerplate-project.git my-project
-cd your-project
+git clone git@github.com:changer/backbone-boilerplate-project.git my-app
+cd my-app
 rm -rf .git
 echo '# My new project' > README.md
 git init
-git commit -m "My commit to my-project"
+git commit -m "My commit to my-app"
 git submodule update --init --recursive
 ```
 
@@ -43,4 +43,3 @@ grunt debug or grunt release
 ```
 
 # Happy coding
-
