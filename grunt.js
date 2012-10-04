@@ -19,10 +19,12 @@ module.exports = function(grunt) {
     requirejs: {
       compile: {
         options: {
-          name: 'config',
           mainConfigFile: 'app/boilerplate/config.js',
+          baseUrl: 'app/',
+          optimize: 'none',
+          insertRequire: ['boot'],
           out: 'dist/debug/app.js',
-          wrap: false
+          name: 'config'
         }
       }
     },
@@ -40,7 +42,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'app/boilerplate/libs/almond/almond.js',
+          'app/boilerplate/libs/almond.js',
           'dist/debug/templates.js',
           'dist/debug/app.js'
         ],
@@ -65,13 +67,13 @@ module.exports = function(grunt) {
     less: {
       application: {
         src: 'assets/css/app.less',
-        dest: 'dist/debug/app.css'
+        dest: 'dist/debug/assets/css/app.css'
       }
     },
 
     mincss: {
-      'dist/release/app.css': [
-        'dist/debug/app.css'
+      'dist/release/assets/css/app.css': [
+        'dist/debug/assets/css/app.css'
       ]
     },
 
@@ -89,18 +91,6 @@ module.exports = function(grunt) {
       release: {
         input: 'index.html',
         output: 'dist/release/index.html'
-      }
-    },
-
-    finishjst: {
-      debug: {
-        input: 'dist/debug/templates.js'
-      }
-    },
-
-    finishless: {
-      debug: {
-        input: 'dist/debug/app.css'
       }
     },
 
