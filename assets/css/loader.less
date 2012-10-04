@@ -1,0 +1,26 @@
+body > .loader {
+  position: fixed;
+  top: 50%;
+}
+
+body * > .loader {
+  margin-bottom: 50px;
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  background: @white url(img/ajax-loader-small.gif) center center no-repeat;
+  position: relative;
+  left: 50%;
+  margin: -13px 0px 0px -13px;
+  z-index: 10000;
+  padding: 5px;
+  .opacity(0);
+  .transition(opacity 1.5s);
+  .border-radius(10000px);
+  .box-shadow(5px 5px 20px 0px @gray);
+  &.visible {
+    .opacity(70);
+  }
+}
