@@ -5,7 +5,7 @@
 Clone a copy of our empty project setup:
 
 ```
-git clone git@github.com:rubenstolk/backbone-boilerplate-project.git my-project
+git clone git@github.com:changer/backbone-boilerplate-project.git my-project
 cd your-project
 rm -rf .git
 echo '# My new project' > README.md
