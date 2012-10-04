@@ -15,4 +15,6 @@ define([
 
   Home.Model = Backbone.Model.extend({ });
 
+  return Home;
+
 });

@@ -1,16 +1,18 @@
 define([
-  'app'
+  'app',
+  'modules/menu',
+  'modules/home'
 ],
 
-function(app) {
+function(app, Menu, Home) {
 
   return Backbone.Router.extend({
 
     defaultLayout: 'main',
 
     routes: {
-      '*default': 'index',
-      'about': 'about'
+      'about': 'about',
+      '*default': 'index'
     },
 
     index: function(route) {
@@ -65,8 +67,8 @@ function(app) {
         return { item: el.innerHTML, path: el.href.replace(/^.*\//, ''), className: el.className };
       }));
       this.menu = new Menu.Collection([
-        { item: 'About', path: '/about', className: 'about' },
-        { item: 'Home', path: '/', className: 'home' }
+        { item: 'Home', path: '/', className: 'home' },
+        { item: 'About', path: '/about', className: 'about' }
       ]);
       return this.start && this.start();
     }

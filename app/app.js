@@ -40,7 +40,7 @@ function($, _, Backbone, live) {
     },
     live: live,
     switchLayout: function(oldLayout, newLayout) {
-      var old = $(app.el).find('> *').not(newLayout.el),
+      var old = $('#main').find('> *').not(newLayout.el),
           clean = function() {
             return [
               oldLayout && oldLayout.remove(),
