@@ -18,5 +18,29 @@ This will take a while as all libraries will be cloned from Github.
 
 Now you can start building your app!
 
+### Debug/Release
+
+This boilerplate includes a Grunt-setup for building releases. It also supports sprite-generation.
+
+# Install grunt on your machine:
+```
+npm install -g grunt
+```
+
+# Install required packages for boilerplate grunt setup:
+```
+npm install
+```
+
+# Generate sprite.png and sprite.less from all images inside /assets/img/sprite:
+```
+grunt spritesheet
+```
+
+# Generate debug / release build
+```
+grunt debug or grunt release
+```
+
 # Happy coding
 
