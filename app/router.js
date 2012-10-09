@@ -41,13 +41,6 @@ function(app, Menu, Home) {
       return this.navigate(_.toArray(arguments).join('/'), true);
     },
 
-    renderOn: function(model, event) {
-      event = event || 'change';
-      model.on(event, function() {
-        app.layout.render();
-      });
-    },
-
     render: function() {
       app.layout.render();
     },

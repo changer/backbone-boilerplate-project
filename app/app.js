@@ -8,10 +8,6 @@ define([
 
 function($, _, Backbone, live) {
 
-  Backbone.Module = function(additionalProps) {
-    return _.extend({ Views: {} }, additionalProps);
-  };
-
   // Backbone global settings
   Backbone.Model.prototype.idAttribute = '_id';
   Backbone.View.prototype.serialize = function() {
