@@ -1,6 +1,6 @@
-# Boilerplate for Backbone + LayoutManager and common libraries
+## Boilerplate for Backbone + LayoutManager and common libraries
 
-### Getting started
+## Getting started
 
 Clone a copy of our empty project setup:
 
@@ -18,28 +18,28 @@ This will take a while as all libraries will be cloned from Github.
 
 Now you can start building your app!
 
-### Debug/Release
+## Debug/Release
 
 This boilerplate includes a Grunt-setup for building releases. It also supports sprite-generation.
 
-# Install grunt on your machine:
+### Install grunt on your machine:
 ```
 npm install -g grunt
 ```
 
-# Install required packages for boilerplate grunt setup:
+### Install required packages for boilerplate grunt setup:
 ```
 npm install
 ```
 
-# Generate sprite.png and sprite.less from all images inside /assets/img/sprite:
+### Generate sprite.png and sprite.less from all images inside /assets/img/sprite:
 ```
 grunt spritesheet
 ```
 
-# Generate debug / release build
+### Generate debug / release build
 ```
 grunt debug or grunt release
 ```
 
-# Happy coding
+## Happy coding
