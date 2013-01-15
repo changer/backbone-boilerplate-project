@@ -33,7 +33,7 @@ module.exports = function(grunt) {
       compile: {
         files: {
           'dist/debug/templates.js': [
-            'app/templates/**/*.html', 'app/layouts/**/*.html'
+            'app/templates/**/*.html'
           ]
         }
       }
