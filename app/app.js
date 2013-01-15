@@ -30,10 +30,7 @@ function($, _, Backbone, live) {
     el: '#main',
     root: '/',
     baseUrl: '/api/',
-    paths: {
-      layout: 'app/layouts/',
-      template: 'app/templates/'
-    },
+    prefix: 'app/templates/',
     live: live,
     switchLayout: function(oldLayout, newLayout) {
       var old = $('#main').find('> *').not(newLayout.el),
