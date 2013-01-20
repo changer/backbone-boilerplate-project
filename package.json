@@ -9,10 +9,19 @@
   , "dependencies": {
     }
   , "devDependencies": {
-        "grunt-contrib": "latest"
-      , "grunt-less": "latest"
-      , "grunt-clean": "latest"
-      , "grunt-targethtml": "latest"
-      , "node-spritesheet": "latest"
+      "grunt-contrib": "latest",
+      "grunt-targethtml": "latest",
+      "grunt-closure-compiler": "git://github.com/madhums/grunt-closure-compiler.git",
+      "grunt-smushit": "latest",
+      "grunt-rev-package": "latest",
+      "grunt-replace": "latest",
+      "grunt-bump": "latest",
+      "node-spritesheet": "latest",
+      "mocha": "latest",
+      "nodemon": "latest",
+      "should": "latest",
+      "superagent": "latest",
+      "Faker": "latest",
+      "yaml-config": "latest"
     }
 }

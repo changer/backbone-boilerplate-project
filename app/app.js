@@ -1,20 +1,25 @@
 define([
-  'jquery',
-  'lodash',
-  'backbone',
-
-  'helpers/live'
+  'helpers/live',
+  'backbone'
 ],
 
-function($, _, Backbone, live) {
+function(live, Backbone) {
 
   // Backbone global settings
   Backbone.Model.prototype.idAttribute = '_id';
+
+  Backbone.Model.prototype.initialize = Backbone.Collection.prototype.initialize = function(options) {
+    this.options = options || {};
+  };
+
   Backbone.View.prototype.serialize = function() {
     var result = {
     };
     if(this.model && this.model.toJSON) {
       result.model = this.model.toJSON();
+    }
+    else if(this.model) {
+      result.model = this.model;
     }
     if(this.collection && this.collection.toJSON) {
       result.collection = this.collection.toJSON();

@@ -3,8 +3,16 @@
 }
 
 .sprite.logo {
-  width: 466px;
-  height: 35px;
+  width: 233px;
+  height: 18px;
   background-position: 0px 0px;
 }
 
+
+
+.sprite {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: '192dpi') {
+    background-image: url('../img/sprite2x.png');
+    background-size: 233px 18px;
+  }
+}
