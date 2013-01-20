@@ -18,9 +18,6 @@ function(live, Backbone) {
     if(this.model && this.model.toJSON) {
       result.model = this.model.toJSON();
     }
-    else if(this.model) {
-      result.model = this.model;
-    }
     if(this.collection && this.collection.toJSON) {
       result.collection = this.collection.toJSON();
     }
