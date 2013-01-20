@@ -37,9 +37,9 @@ npm install
 grunt spritesheet
 ```
 
-### Generate debug / release build
+### Generate builds
 ```
-grunt debug or grunt release
+grunt full or grunt all
 ```
 
 ## Happy coding
